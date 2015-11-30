@@ -1,9 +1,327 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-<head>
-  <title></title>
-</head>
-<body>
+   <head>
+      <meta charset="utf-8">
+      <title>Rathi Associates</title>
 
-</body>
+      <link rel="shortcut icon" href="images/icon.ico">
+      <!-- Bootstrap CSS -->
+		<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+		<link href="includes/css/bootstrap-glyphicons.css" rel="stylesheet">
+
+		<!-- Custom CSS -->
+		<link rel="stylesheet" href="includes/css/styles.css" media="screen">
+
+		<!-- Include Modernizr in the head, before any other Javascript -->
+		<script src="includes/js/modernizr-2.6.2.min.js"></script>
+
+   </head>
+   <body>
+      <div class="container" id="site_wrap">
+
+         <div class="header-one site-header-wrap">
+            <div class="container">
+               <div class="row">
+                  <div class="col-sm-6 col-xs-12">
+                     <a href="#" ><img class="img-responsive" src="images/logo.png" alt="logo image" id="logo" /></a>
+                  </div>
+                  <div class="col-sm-6 col-xs-12">
+                     <div class="details push-top">
+                        <div class="address-outer">
+                           <span class="glyphicon glyphicon-map-marker pull-right"></span>
+                           <address>
+                              <span>Rathi Assoicate, Okhla Industrial Area</span>
+                              <br>
+                              <span>Near Hondo Motors showroom</span>
+                              <span>New Delhi</span>
+                              <span>110044</span>
+                           </address>
+                        </div>
+
+                        <p>
+                           <span class="glyphicon glyphicon-phone"></span>
+                           <span class="tel">
+                              <span>Call us on - </span>
+                                  011 234-333-33
+
+                           </span>
+                           <br>
+                           <span class="glyphicon glyphicon-envelope"></span>
+                           <span class="email">
+                              <span>Email -</span>
+                              <a href="mailto:info@rathiassociate.com">info@rathiassociate.com</a>
+                           </span>
+                        </p>
+                     </div>
+                  </div>
+
+               </div>
+            </div>
+            <nav>
+               <div class="navbar navbar-default">
+                  <div class="navbar-header">
+                     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#mainMenu">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="burger-menu-title">MENU</span>
+                     </button>
+                  </div>
+                  <div class="nav-collapse collapse">
+                     <ul class="nav navbar-nav">
+                        <li class="active"><a href="#">Home</a></li>
+                        <li><a href="#">Portfolio</a></li>
+                        <li class="dropdown">
+                           <a class="dropdown-toggle" data-toggle="dropdown" href="#">Services <strong><span class="caret"></span></strong></a>
+                           <ul class="dropdown-menu">
+                              <li><a href="#">Overview</a></li>
+                              <li><a href="#">Services for business</a></li>
+                              <li><a href="#">Services for individual</a></li>
+                           </ul>
+                        </li>
+                        <li class="dropdown">
+                           <a class="dropdown-toggle" data-toggle="dropdown" href="#">About US <strong><span class="caret"></span></strong></a>
+                           <ul class="dropdown-menu">
+                              <li><a href="#">Overview</a></li>
+                              <li><a href="#">The Firm</a></li>
+                           </ul>
+                        </li>
+                        <li><a href="#">Recruitment</a></li>
+                        <li><a href="#">Contact US</a></li>
+
+                     </ul>
+                  </div>
+               </div>
+            </nav>
+         </div>
+
+         <!-- =carousel -->
+         <div class="carousel slide" id="banner-carousel" data-ride="carousel">
+            <!-- =Indicators -->
+            <ol class="carousel-indicators">
+               <li  data-slide-to="0" data-target="#banner-carousel"></li>
+               <li class="active" data-slide-to="1" data-target="#banner-carousel"></li>
+               <li data-slide-to="2" data-target="#banner-carousel"></li>
+               <li data-slide-to="3" data-target="#banner-carousel"></li>
+            </ol> <!--end Indicators -->
+
+            <div class="carousel-inner">
+               <div class="item active">
+                  <img class="first-slide" src="images/banner-one.jpg" alt="first slide" />
+                  <div class="carousel-caption slide-type-one">
+                     <h3>Business Plans & Forecasting</h3>
+                     <p>Our support for you stretches far beyond the essential compliance services.</p>
+                     <p><a type="button" class="btn btn-large btn-primary" role="button">Find out more >></a></p>
+                  </div>
+               </div> <!--end fouth one  -->
+
+               <div class="item">
+                  <img class="second-slide" src="images/banner-two.jpg" alt="second slide" />
+                  <div class="carousel-caption slide-type-two">
+                     <h3>Funding Arrangements</h3>
+                     <p>We can help you to secure the essential deals for your business.</p>
+                     <p><a type="button" class="btn btn-large btn-primary" role="button">Find out more >></a></p>
+                  </div>
+               </div> <!--end fouth two  -->
+
+               <div class="item">
+                  <img class="third-slide" src="images/banner-three.jpg" alt="third slide" />
+                  <div class="carousel-caption slide-type-one">
+                     <h3>Management Accounts</h3>
+                     <p>We can prepare accounts for all types of business.</p>
+                     <p><a type="button" class="btn btn-large btn-primary" role="button">Find out more >></a></p>
+                  </div>
+               </div> <!--end fouth three  -->
+
+               <div class="item">
+                  <img class="fourth-slide" src="images/banner-three.jpg" alt="fourth slide" />
+                  <div class="carousel-caption slide-type-two">
+                     <h3>Free Initial Consultation</h3>
+                     <p>Get in touch to arrange your free initial consultation.</p>
+                     <p><a type="button" class="btn btn-large btn-primary" role="button">Find out more >></a></p>
+                  </div>
+               </div> <!--end fouth slide  -->
+            </div> <!--end carousel-carousel  -->
+
+            <!--=controls  -->
+            <a class="left carousel-control" href="#banner-carousel" data-slide="prev">
+               <span class="glyphicon glyphicon-chevron-left" ></span>
+            </a>
+            <a class="right carousel-control" href="#banner-carousel" role="button" data-slide="next">
+               <span class="glyphicon glyphicon-chevron-right"></span>
+            </a>
+
+         </div> <!--end banner-carousel  -->
+
+         <!-- =site main description -->
+         <div class="row description">
+            <div class="col-sm-12">
+               <h1>Welcome to Rathi Associates <br> <small class="text-muted">Accounting solutions tailored to your business</small></h1>
+
+               <div class="lead">
+                  <p>We are a highly skilled team of accountants near Kirkby in Ashfield in Nottinghamshire, bringing quality accountancy services to local businesses. Whether you’re an SME, start-up, or operate as an individual contractor, we can help you improve your financial position./<p>
+                  <p>Our clients work in all sectors – from architects and surveyors to vets and designers – and we’re always happy to hear from new businesses looking to reduce their tax bill and maximise their wealth.</p>
+                  <p>With fixed fees and a free initial consultation, you’ve got nothing to lose by <a href="#">contacting us</a> today!</p>
+               </div>
+            </div>
+
+         </div>
+
+         <!-- =quick links -->
+         <div class="row quicklinks">
+            <h3>Quick links</h3>
+            <div class="col-sm-6 col-xs-12 list-group content-page-nav-links">
+               <a class="list-group-item" href="#">Accountancy</a>
+               <a class="list-group-item" href="#">Account Software</a>
+               <a class="list-group-item" href="#">Bookkeeping</a>
+               <a class="list-group-item" href="#">Business start-up</a>
+               <a class="list-group-item" href="#">Business support</a>
+               <a class="list-group-item" href="#">Business tax</a>
+               <a class="list-group-item" href="#">Company secretarial</a>
+            </div>
+            <div class="col-sm-6 col-xs-12">
+               <div class="subscription-text push-top">
+                  <h1><span class="glyphicon glyphicon-envelope">&nbsp;</span>Free Monthly Newswire</h1>
+                  <div class="lead">
+                     <p> Why not register to receive our Monthly Newswire? Sign up today and once a month we'll send you an email packed full of essential business news and handy tax tips to help save you money.</p>
+                  </div>
+
+                  <a class="btn btn-primary" href="#">Sign up today!</a>
+               </div>
+            </div>
+         </div>
+
+         <div class="row">
+            <hr>
+         </div>
+         <!-- =our main services -->
+         <div class="row well well-sm service-heading">
+            <h1>Our services</h1>
+         </div>
+         <div class="row" id="services">
+
+            <div class="col-sm-4 col-xs-12">
+               <figure>
+                  <img src="images/taxation.jpg" alt="need help image" />
+                  <figcaption>
+                     <h3>Need help with your taxes</h3>
+                     <p>We can offer peace of mind that you are complying with your tax liablities.</p>
+                  </figcaption>
+               </figure>
+               <a class="btn btn-primary" href="#">Read more</a>
+            </div>
+
+            <div class="col-sm-4 col-xs-12">
+               <figure>
+                  <img src="images/startup.jpg" alt="need help image" />
+                  <figcaption>
+                     <h3>Starting out in business</h3>
+                     <p>We will help and support you at this crucial time in the life-cycle of your business.</p>
+                  </figcaption>
+               </figure>
+               <a class="btn btn-primary" href="#">Read more</a>
+            </div>
+
+            <div class="col-sm-4 col-xs-12">
+               <figure>
+                  <img src="images/payroll.jpg" alt="need help image" />
+                  <figcaption>
+                     <h3>Payroll becoming a bother</h3>
+                     <p>We can help you to relieve the burdon with our comprehensive payroll service.</p>
+                  </figcaption>
+               </figure>
+               <a class="btn btn-primary" href="#">Read more</a>
+            </div>
+         </div>
+
+         <hr>
+
+         <div class="row">
+            <div class="col-sm-5">
+               <img src="images/reports_chart.png" alt="reports image" />
+            </div>
+            <div class="col-sm-7">
+               <h3>POWERFUL INSIGHTS TO HELP GROW YOUR BUSINESS.</h3>
+               <p class="lead">Reports let you easily track and analyze your accounts, sales, orders, and payments.</p>
+               <p class="lead">Our support for you stretches far beyond the essential compliance services. We aim to be your business partners, working with you to ensure the best possible chance of success.</p>
+               <p class="lead">Our specialization includes business start-ups,business planning, financial management, minimising the tax bill, efficient billing and cash collection and much more.</p>
+
+            </div>
+         </div>
+      </div>
+
+      <footer>
+         <div class="container">
+            <div class="row">
+               <div class="col-sm-8 col-xs-12">
+                  <h4>The latest news</h4>
+                  <div class="text_wrap">
+                    <h3><a href="#">Young likely to be poorer than parents 'at every stage in life', claims IFS</a></h3>
+                    <p>A new report by the Institute for Fiscal Studies (IFS) claims that young people are on course to be less wealthy than their parents throughout their lives, largely due to increasing pension values for older generations.</p>
+                    <p class="date">22 Nov 2015</p>
+                  </div>
+               </div>
+
+               <div class="col-sm-4 col-xs-12">
+                  <h4>Get in Touch -</h4>
+                  <p>Tel: <span>0115 871 3465</span></p>
+                  <p>Email:
+                     <span class="email-address">
+                        <a href="mailto:info@ashokruhela@gmail.com">info@ashokruhela@gmail.com</a>
+                     </span>
+                  </p>
+                  <div class="address-block-address">
+                     <h4>Address -</h4>
+                     <p><span class="company-address">Rathi Associates, New Delhi,</span>
+                        <span>Near PVR Mall,</span>
+                        <span>Okhla Industrial Area,</span>
+                        <span>110044</span>
+                     </p>
+                  </div>
+                  <div class="social">
+                    <p>Like us on
+                       <a href="#"><img src="images/twitter.png" alt="twitter"></a>
+                       <a href="#"><img src="images/fb.png" alt="twitter"></a>
+                       <a href="#"><img src="images/gl.png" alt="twitter"></a>
+                    </p>
+                 </div>
+               </div>
+            </div>
+
+            <hr class="linebreak">
+
+            <div class="row">
+               <div class="site_map">
+                  <nav>
+                    <ul>
+                       <li><a href="#">Home</a></li>
+                       <li><a href="#">Contact US</a></li>
+                       <li><a href="#">About</a></li>
+                    </ul>
+                 </nav>
+                 <p>© 2015 Rathi Associates. All rights reserved.</p>
+              </div>
+            </div>
+
+      </footer>
+
+      <!-- All Javascript at the bottom of the page for faster page loading -->
+
+	<!-- First try for the online version of jQuery-->
+	<script src="http://code.jquery.com/jquery.js"></script>
+
+	<!-- If no online access, fallback to our hardcoded version of jQuery -->
+	<script>window.jQuery || document.write('<script src="includes/js/jquery-1.8.2.min.js"><\/script>')</script>
+
+	<!-- Bootstrap JS -->
+	<script src="bootstrap/js/bootstrap.min.js"></script>
+
+	<!-- Custom JS -->
+	<script src="includes/js/script.js"></script>
+
+   </body>
+
+
+
+
 </html>
