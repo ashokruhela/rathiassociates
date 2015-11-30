@@ -1,215 +1,96 @@
 /*header*/
+.header-one {
+   padding: 20px;
+}
 
+.address-header {
+   text-align: right;
+}
 
+.tel, .email {
+ font-size: 18px;
+}
 
-/*=navbar*/
+.email a {
+   color: #1fbfcd;
+}
+
+/*=navigation*/
 .navbar-default {
    margin-bottom: 0px;
    background: #1fbfcd;
 }
+
 .navbar-default li a {
    color: white;
    font-size: 18px;
-
 }
 
 .navbar-default li a:hover {
    background: #15818b;
    color: white;
 }
+
 .dropdown-menu li a {
    color: black;
 }
 
-.navbar li {
+.navbar-nav .active {
+   color: red;
+}
+.caret {
    color: white;
 }
 
-.nav-collapse {
-   padding-left: 20px;
-}
-
-/*.active a {
-   background-color: #15818b;
-   color: white;
-}*/
-
-/*=carousel*/
-#banner-carousel {
-   margin-left: 0px;
-   /*margin-top: 200px;*/*/
-
-}
-
-#banner-carousel img {
-   height: 500px;
-}
-
-.carousel-caption h3 {
-   font-size: 32px;
-   font-style: italic;
-   font-weight: bold;
-   line-height: 1.1em;
-}
-
-.carousel-caption p {
-   font-size: 20px;
-}
-
-.slide-type-one,.slide-type-two {
-   position: absolute;
-   width: 50%;
-   height: 220px;
-   padding-left: 0;
-   opacity: .9;
-   bottom: 0px;
-}
-
-.slide-type-one {
-   background: gray;
-   left: 0;
-
-}
-.slide-type-two {
-   background: #1fbfcd;
-   right: 0;
-}
-
-/*=descripton*/
-.description {
-   margin: 10px;
-}
-
-#description .row {
-   background: white;
-}
 /*=quick links*/
 .quicklinks .list-group-item {
    background: rgba(31, 191, 205, 0.1);
 }
 
-.quicklinks{
-   margin-left: 10px;
-}
 .quicklinks a {
    color: black;
 }
+
 .quicklinks a:hover {
    color: white;
    background: #15818b;
 }
 
+.quicklinks {
+   padding: 10px;
+}
+
 .subscription-text {
    padding: 20px;
    background: #f5f5f5;
-
+   margin-top: 20px;
+   margin-right: 20px;
 }
 
-.subscription-text p {
-
-}
-
-/*==services*/
-.well {
-   background: #f5f5f5;
-}
-
-#services {
-   margin-left: 5px;
-
-}
-
-.well {
-   margin-left: 20px;
-}
+/*=service-heading*/
 .service-heading {
-   margin: 20px 10px;
-   padding: 0;
+   padding: 10px;
+   margin-right: 10px;
 }
-/*=reports*/
+
 
 /*=misc*/
 h1 {
-   font-size: 30px;
+   font-size: 28px;
 }
-
 h1 small {
-   font-size: 18px;
-}
-
-/*-glyphicons*/
-
-.glyphicon {
-   color: #1fbfcd;
-   font-size: 20px;
-}
-.glyphicon-map-marker {
-   font-size: 30px;
-}
-
-.lead p {
-   font-size: 18px;
-}
-
-.glyphicon-map-marker:hover, .glyphicon-envelope:hover, .glyphicon-phone:hover {
-   transform: rotateX(-180deg);
-}
-
-.details {
-   text-align: right;
-}
-
-.push-top {
-   margin-top: 20px;
-}
-
-.push-bottom {
-  margin-bottom: 20px;
-}
-
-.push-right {
- margin-right: 20px;
-}
-
-.pad-right {
- padding-right: 20px;
-}
-
-.tel, .email {
- font-size: 20px;
-}
-/*Media queries*/
-/*=configurations for extra small devices like phones*/
-@media (maxwidth:767px) {
-   h1 {
-      color: red;
-      font-size: 1px;
-   }
-}
-
-/*=configurations for small devices like tablets*/
-@media (maxwidth:991px) {
-   h1 {
-      font-size: 25px;
-   }
-}
-
-/*=configurations for large devices like desktops*/
-@media (minwidth:992px) {
-   h1 {
-      font-size: 35px;
-   }
+   font-size: 22px;
 }
 
 /*=body*/
 .body, .container {
    font-family: "Open Sans", Calibri, Candara, Arial, sans-serif;
-
-}
-#site_wrap {
-   box-shadow: 0 0 5px 2px rgba(0, 0, 0, .5);
+   /*box-shadow: 0,0,0,5px;*/
 }
 
+p {
+   font-size: 20px;
+}
 
 /*=footer*/
 
@@ -221,10 +102,6 @@ footer {
 
 footer h4 {
   color: #b4f5f5;
-}
-
-footer p {
-   font-size: 17px;
 }
 
 footer a {
@@ -265,4 +142,40 @@ footer li:last-child::after {
   width: 30px;
   height: 30px;
   padding: 1px;
+}
+
+/*Media queries*/
+/*=configurations for extra small devices like phones*/
+@media (maxwidth:767px) {
+   h1 {
+      color: red;
+      font-size: 1px;
+   }
+}
+
+/*=configurations for small devices like tablets*/
+@media (maxwidth:991px) {
+   h1 {
+      font-size: 25px;
+   }
+}
+
+/*=configurations for large devices like desktops*/
+@media (minwidth:992px) {
+   h1 {
+      font-size: 35px;
+   }
+}
+
+/*-glyphicons*/
+.glyphicon {
+   color: #1fbfcd;
+   font-size: 20px;
+}
+.glyphicon-map-marker {
+   font-size: 30px;
+}
+
+.glyphicon-map-marker:hover, .glyphicon-envelope:hover, .glyphicon-phone:hover {
+   transform: rotateX(-180deg);
 }

@@ -19,24 +19,22 @@
    <body>
       <div class="container" id="site_wrap">
 
-         <div class="header-one site-header-wrap">
-            <div class="container">
+         <div class="site-header-wrap">
+            <div class="container header-one">
                <div class="row">
-                  <div class="col-sm-6 col-xs-12">
+                  <div class="col-sm-6">
                      <a href="#" ><img class="img-responsive" src="images/logo.png" alt="logo image" id="logo" /></a>
                   </div>
-                  <div class="col-sm-6 col-xs-12">
-                     <div class="details push-top">
-                        <div class="address-outer">
-                           <span class="glyphicon glyphicon-map-marker pull-right"></span>
-                           <address>
-                              <span>Rathi Assoicate, Okhla Industrial Area</span>
-                              <br>
-                              <span>Near Hondo Motors showroom</span>
-                              <span>New Delhi</span>
-                              <span>110044</span>
-                           </address>
-                        </div>
+                  <div class="col-sm-6">
+                     <div class="address-header pull-right">
+                        <span class="glyphicon glyphicon-map-marker pull-right"></span>
+                        <address>
+                           <span>Rathi Assoicate, Okhla Industrial Area</span>
+                           <br>
+                           <span>Near Hondo Motors showroom</span>
+                           <span>New Delhi </span>
+                           <span>110044</span>
+                        </address>
 
                         <p>
                            <span class="glyphicon glyphicon-phone"></span>
@@ -49,7 +47,7 @@
                            <span class="glyphicon glyphicon-envelope"></span>
                            <span class="email">
                               <span>Email -</span>
-                              <a href="mailto:info@rathiassociate.com">info@rathiassociate.com</a>
+                              <a href="mailto:ashok.kumar6@wipro.com">ashok.kumar6@wipro.com</a>
                            </span>
                         </p>
                      </div>
@@ -107,7 +105,7 @@
 
             <div class="carousel-inner">
                <div class="item active">
-                  <img class="first-slide" src="images/banner-one.jpg" alt="first slide" />
+                  <img class="img-responsive first-slide" src="images/banner-one.jpg" alt="first slide" />
                   <div class="carousel-caption slide-type-one">
                      <h3>Business Plans & Forecasting</h3>
                      <p>Our support for you stretches far beyond the essential compliance services.</p>
@@ -116,7 +114,7 @@
                </div> <!--end fouth one  -->
 
                <div class="item">
-                  <img class="second-slide" src="images/banner-two.jpg" alt="second slide" />
+                  <img class="img-responsive second-slide" src="images/banner-two.jpg" alt="second slide" />
                   <div class="carousel-caption slide-type-two">
                      <h3>Funding Arrangements</h3>
                      <p>We can help you to secure the essential deals for your business.</p>
@@ -125,7 +123,7 @@
                </div> <!--end fouth two  -->
 
                <div class="item">
-                  <img class="third-slide" src="images/banner-three.jpg" alt="third slide" />
+                  <img class="img-responsive third-slide" src="images/banner-three.jpg" alt="third slide" />
                   <div class="carousel-caption slide-type-one">
                      <h3>Management Accounts</h3>
                      <p>We can prepare accounts for all types of business.</p>
@@ -155,7 +153,7 @@
 
          <!-- =site main description -->
          <div class="row description">
-            <div class="col-sm-12">
+            <div class="col-lg-12">
                <h1>Welcome to Rathi Associates <br> <small class="text-muted">Accounting solutions tailored to your business</small></h1>
 
                <div class="lead">
@@ -170,7 +168,7 @@
          <!-- =quick links -->
          <div class="row quicklinks">
             <h3>Quick links</h3>
-            <div class="col-sm-6 col-xs-12 list-group content-page-nav-links">
+            <div class="col-lg-6 list-group content-page-nav-links">
                <a class="list-group-item" href="#">Accountancy</a>
                <a class="list-group-item" href="#">Account Software</a>
                <a class="list-group-item" href="#">Bookkeeping</a>
@@ -179,30 +177,81 @@
                <a class="list-group-item" href="#">Business tax</a>
                <a class="list-group-item" href="#">Company secretarial</a>
             </div>
-            <div class="col-sm-6 col-xs-12">
-               <div class="subscription-text push-top">
+            <div class="col-lg-6">
+               <div class="subscription-text">
                   <h1><span class="glyphicon glyphicon-envelope">&nbsp;</span>Free Monthly Newswire</h1>
                   <div class="lead">
                      <p> Why not register to receive our Monthly Newswire? Sign up today and once a month we'll send you an email packed full of essential business news and handy tax tips to help save you money.</p>
                   </div>
+                  <!-- <a class="btn btn-primary" href="#signupModal">Sign up today!</a> -->
+                  <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#signupModal">Sign up today</button>
+                  <div id="signupModal" class="modal fade" role="dialog">
+                     <div class="modal-dialog">
+                        <div class="modal-content">
+                           <div class="modal-header">
+                              <button type="button" class="close" data-dismiss="modal"></button>
+                              <h4 class="modal-title">Personal Info</h4>
+                           </div>
+                           <div class="modal-body">
+                              <p>
+                                 This form is used to subscribe the <a href="#" data-original-title="All product information is provided in the newsletter" rel="tooltip">newsletter</a>
+                              </p>
+                              <form class="form-horizontal" action="index.html" method="post">
 
-                  <a class="btn btn-primary" href="#">Sign up today!</a>
+                                 <div class="form-group">
+                                    <label for="name" class="col-sm-2 control-label">Name</label>
+                                    <div class="col-sm-10">
+                                       <input class="form-control" type="text" name="name" placeholder="Enter your name">
+                                    </div>
+                                 </div>
+                                 <div class="form-group">
+                                    <label for="mail" class="col-sm-2 control-label">Name</label>
+                                    <div class="col-sm-10">
+                                       <input class="form-control" type="email" name="mail" placeholder="Enter your email">
+                                    </div>
+                                 </div>
+                                 <div class="form-group">
+                                     <div class="col-sm-offset-2 col-sm-10">
+                                       <div class="checkbox">
+                                         <label>
+                                           <input type="checkbox"> Monthly newsletter
+                                         </label>
+                                       </div>
+                                     </div>
+                                  </div>
+                                  <div class="form-group">
+                                      <div class="col-sm-offset-2 col-sm-10">
+                                        <div class="checkbox">
+                                          <label>
+                                            <input type="checkbox"> New product information
+                                          </label>
+                                        </div>
+                                      </div>
+                                   </div>
+                              </form>
+
+                           </div>
+                           <div class="modal-footer">
+                              <button type="submit" class="btn btn-default">Subscribe</button>
+                              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                              <p class="text-muted">Submit functionaliy is not yet working</p>
+                           </div>
+                        </div>
+                     </div>
+                  </div> <!-- end modal dialog -->
                </div>
             </div>
          </div>
 
-         <div class="row">
-            <hr>
-         </div>
          <!-- =our main services -->
          <div class="row well well-sm service-heading">
             <h1>Our services</h1>
          </div>
          <div class="row" id="services">
 
-            <div class="col-sm-4 col-xs-12">
+            <div class="col-lg-4">
                <figure>
-                  <img src="images/taxation.jpg" alt="need help image" />
+                  <img class="img-thumbnail img-responsive" src="images/taxation.jpg" alt="need help image" />
                   <figcaption>
                      <h3>Need help with your taxes</h3>
                      <p>We can offer peace of mind that you are complying with your tax liablities.</p>
@@ -211,9 +260,9 @@
                <a class="btn btn-primary" href="#">Read more</a>
             </div>
 
-            <div class="col-sm-4 col-xs-12">
+            <div class="col-lg-4">
                <figure>
-                  <img src="images/startup.jpg" alt="need help image" />
+                  <img class="img-thumbnail img-responsive" src="images/startup.jpg" alt="need help image" />
                   <figcaption>
                      <h3>Starting out in business</h3>
                      <p>We will help and support you at this crucial time in the life-cycle of your business.</p>
@@ -222,9 +271,9 @@
                <a class="btn btn-primary" href="#">Read more</a>
             </div>
 
-            <div class="col-sm-4 col-xs-12">
+            <div class="col-lg-4">
                <figure>
-                  <img src="images/payroll.jpg" alt="need help image" />
+                  <img class="img-thumbnai img-responsive" src="images/payroll.jpg" alt="need help image" />
                   <figcaption>
                      <h3>Payroll becoming a bother</h3>
                      <p>We can help you to relieve the burdon with our comprehensive payroll service.</p>
@@ -237,10 +286,10 @@
          <hr>
 
          <div class="row">
-            <div class="col-sm-5">
-               <img src="images/reports_chart.png" alt="reports image" />
+            <div class="col-lg-5">
+               <img class="img-thumbnail img-responsive" src="images/reports_chart.png" alt="reports image" />
             </div>
-            <div class="col-sm-7">
+            <div class="col-lg-7">
                <h3>POWERFUL INSIGHTS TO HELP GROW YOUR BUSINESS.</h3>
                <p class="lead">Reports let you easily track and analyze your accounts, sales, orders, and payments.</p>
                <p class="lead">Our support for you stretches far beyond the essential compliance services. We aim to be your business partners, working with you to ensure the best possible chance of success.</p>
@@ -253,7 +302,7 @@
       <footer>
          <div class="container">
             <div class="row">
-               <div class="col-sm-8 col-xs-12">
+               <div class="col-lg-6">
                   <h4>The latest news</h4>
                   <div class="text_wrap">
                     <h3><a href="#">Young likely to be poorer than parents 'at every stage in life', claims IFS</a></h3>
@@ -262,12 +311,12 @@
                   </div>
                </div>
 
-               <div class="col-sm-4 col-xs-12">
+               <div class="col-lg-6">
                   <h4>Get in Touch -</h4>
                   <p>Tel: <span>0115 871 3465</span></p>
                   <p>Email:
                      <span class="email-address">
-                        <a href="mailto:info@ashokruhela@gmail.com">info@ashokruhela@gmail.com</a>
+                        <a href="mailto:ashok.kumar6@wipro.com">ashok.kumar6@wipro.com</a>
                      </span>
                   </p>
                   <div class="address-block-address">
@@ -305,7 +354,7 @@
 
       </footer>
 
-      <!-- All Javascript at the bottom of the page for faster page loading -->
+   <!-- All Javascript at the bottom of the page for faster page loading -->
 
 	<!-- First try for the online version of jQuery-->
 	<script src="http://code.jquery.com/jquery.js"></script>
