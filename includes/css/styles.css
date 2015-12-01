@@ -264,23 +264,25 @@ footer li:last-child::after {
    }
 
    .address-header {
+      margin-top: 10px;
       text-align: left;
+      /*clear: both;*/
+      float: left !important;
    }
 
    .item,.carousel-inner>.item>img {
       height: 250px;
    }
 
-   
+
 }
 
 /*=configurations for small devices like tablets*/
 @media (min-width:768px) and (max-width:991px) {
-   /*h1 {
-      font-size: 24px;
-   }
-   h1 small {
-      font-size: 18px;
+   /*.address-header {
+      margin-top: 10px;
+      text-align: right;
+      float: right !important;
    }*/
 }
 
