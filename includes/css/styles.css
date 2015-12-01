@@ -166,6 +166,7 @@ p {
 .thumbnail-image {
    color: grey;
 }
+
 .thumbnail-image h3 {
    font-size: 21px;
    /*color: grey;*/
@@ -236,19 +237,19 @@ footer li:last-child::after {
    }
    h1 small {
       font-size: 14px;
-   }
+   }*/
 
    .carousel-caption h3 {
       font-size: 22px;
-   }*/
+   }
 
    /*=carousel*/
-   /*.carousel-caption p {
+   .carousel-caption p {
       font-size: 15px;
    }
 
    .slide-type-one,.slide-type-two {
-      width:30%;
+      width:50%;
    }
 
    .burger-menu-title {
@@ -256,8 +257,21 @@ footer li:last-child::after {
       display: block;
       font-size: 13px;
       padding: 3px,0,0;
-   }*/
+   }
 
+   .thumbnail-image img {
+      width: 100%
+   }
+
+   .address-header {
+      text-align: left;
+   }
+
+   .item,.carousel-inner>.item>img {
+      height: 250px;
+   }
+
+   
 }
 
 /*=configurations for small devices like tablets*/
