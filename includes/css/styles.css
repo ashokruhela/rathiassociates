@@ -21,27 +21,83 @@
    background: #1fbfcd;
 }
 
-.navbar-default li a {
+.navbar-nav li a {
+   font-size: 18px;
+}
+
+.navbar-nav ul:first {
+   padding-left: 0px;
+}
+
+#mainMenuNav {
+   padding-left: 0;
+}
+
+.navbar-default .navbar-nav>li>a {
    color: white;
    font-size: 18px;
 }
 
-.navbar-default li a:hover {
+.navbar-default .navbar-nav>.active>a, .navbar-nav li a:hover {
    background: #15818b;
    color: white;
 }
+
+/*.navbar-default .navbar-nav>.active>a {
+   background: #15818b;
+   color: white;
+}*/
+
 
 .dropdown-menu li a {
    color: black;
 }
 
-.navbar-nav .active {
-   color: red;
-}
 .caret {
    color: white;
 }
 
+.item,.carousel-inner>.item>img {
+   height: 500px;
+}
+
+}
+.carousel-caption h3 {
+   font-size: 38px;
+   font-style: italic;
+   font-weight: bold;
+   line-height: 1.1em;
+}
+
+/*=carousel*/
+.carousel-caption p {
+   font-size: 20px;
+}
+
+.slide-type-one,.slide-type-two {
+   position: absolute;
+   width: 50%;
+   height: 220px;
+   padding-left: 0;
+   opacity: .9;
+   bottom: 0px;
+   background: #1fbfcd;
+}
+
+.slide-type-one {
+   /*background: gray;*/
+   /*left: 0;*/
+
+}
+.slide-type-two {
+   /*background: #1fbfcd;*/
+   /*right: 0;*/
+}
+
+/*=descripton*/
+.description {
+   margin-left: 5px;
+}
 /*=quick links*/
 .quicklinks .list-group-item {
    background: rgba(31, 191, 205, 0.1);
@@ -58,21 +114,27 @@
 
 .quicklinks {
    padding: 10px;
+   margin-left: 5px;
 }
 
 .subscription-text {
    padding: 20px;
    background: #f5f5f5;
-   margin-top: 20px;
-   margin-right: 20px;
+   margin: 20px;
+   margin-top: 5px;
 }
 
 /*=service-heading*/
-.service-heading {
-   padding: 10px;
-   margin-right: 10px;
+.well {
+   margin-left: 0px;
+   margin-right: 0px;
 }
 
+.service-heading {
+   margin-right: 0px;
+   margin-left: 0px;
+   margin-bottom: 0;
+}
 
 /*=misc*/
 h1 {
@@ -82,14 +144,36 @@ h1 small {
    font-size: 22px;
 }
 
+.push-top {
+   margin-top: 20px;
+}
+
+.push-left {
+   margin-left: 20px;
+}
+
 /*=body*/
 .body, .container {
    font-family: "Open Sans", Calibri, Candara, Arial, sans-serif;
-   /*box-shadow: 0,0,0,5px;*/
+   /*box-shadow: 0px 0px 5px #888888;*/
 }
 
 p {
    font-size: 20px;
+}
+
+/*=porfolio styles*/
+.thumbnail-image {
+   color: grey;
+}
+.thumbnail-image h3 {
+   font-size: 21px;
+   /*color: grey;*/
+}
+
+.thumbnail-image p {
+   /*color: grey;*/
+   font-size: 17px;
 }
 
 /*=footer*/
@@ -146,25 +230,54 @@ footer li:last-child::after {
 
 /*Media queries*/
 /*=configurations for extra small devices like phones*/
-@media (maxwidth:767px) {
-   h1 {
-      color: red;
-      font-size: 1px;
+@media (max-width:767px) {
+   /*h1 {
+      font-size: 20px;
    }
+   h1 small {
+      font-size: 14px;
+   }
+
+   .carousel-caption h3 {
+      font-size: 22px;
+   }*/
+
+   /*=carousel*/
+   /*.carousel-caption p {
+      font-size: 15px;
+   }
+
+   .slide-type-one,.slide-type-two {
+      width:30%;
+   }
+
+   .burger-menu-title {
+      color: white;
+      display: block;
+      font-size: 13px;
+      padding: 3px,0,0;
+   }*/
+
 }
 
 /*=configurations for small devices like tablets*/
-@media (maxwidth:991px) {
-   h1 {
-      font-size: 25px;
+@media (min-width:768px) and (max-width:991px) {
+   /*h1 {
+      font-size: 24px;
    }
+   h1 small {
+      font-size: 18px;
+   }*/
 }
 
 /*=configurations for large devices like desktops*/
-@media (minwidth:992px) {
-   h1 {
-      font-size: 35px;
+@media (min-width:992px) {
+   /*h1 {
+      font-size: 28px;
    }
+   h1 small {
+      font-size: 22px;
+   }*/
 }
 
 /*-glyphicons*/

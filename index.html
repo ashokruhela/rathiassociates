@@ -33,7 +33,7 @@
                            <br>
                            <span>Near Hondo Motors showroom</span>
                            <span>New Delhi </span>
-                           <span>110044</span>
+                           <!-- <span>110044</span> -->
                         </address>
 
                         <p>
@@ -58,17 +58,17 @@
             <nav>
                <div class="navbar navbar-default">
                   <div class="navbar-header">
-                     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#mainMenu">
+                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".mainMenu">
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                         <span class="burger-menu-title">MENU</span>
                      </button>
                   </div>
-                  <div class="nav-collapse collapse">
+                  <div class="navbar-collapse collapse in mainMenu" id="mainMenuNav">
                      <ul class="nav navbar-nav">
                         <li class="active"><a href="#">Home</a></li>
-                        <li><a href="#">Portfolio</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
                         <li class="dropdown">
                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Services <strong><span class="caret"></span></strong></a>
                            <ul class="dropdown-menu">
@@ -114,7 +114,7 @@
                </div> <!--end fouth one  -->
 
                <div class="item">
-                  <img class="img-responsive second-slide" src="images/banner-two.jpg" alt="second slide" />
+                  <img id="slide1" class="img-responsive second-slide" src="images/banner-two.jpg" alt="second slide" />
                   <div class="carousel-caption slide-type-two">
                      <h3>Funding Arrangements</h3>
                      <p>We can help you to secure the essential deals for your business.</p>
@@ -123,7 +123,7 @@
                </div> <!--end fouth two  -->
 
                <div class="item">
-                  <img class="img-responsive third-slide" src="images/banner-three.jpg" alt="third slide" />
+                  <img id="slide2" class="img-responsive third-slide" src="images/banner-three.jpg" alt="third slide" />
                   <div class="carousel-caption slide-type-one">
                      <h3>Management Accounts</h3>
                      <p>We can prepare accounts for all types of business.</p>
@@ -132,7 +132,7 @@
                </div> <!--end fouth three  -->
 
                <div class="item">
-                  <img class="fourth-slide" src="images/banner-three.jpg" alt="fourth slide" />
+                  <img id="slide3" class="fourth-slide" src="images/banner-three.jpg" alt="fourth slide" />
                   <div class="carousel-caption slide-type-two">
                      <h3>Free Initial Consultation</h3>
                      <p>Get in touch to arrange your free initial consultation.</p>
@@ -183,7 +183,7 @@
                   <div class="lead">
                      <p> Why not register to receive our Monthly Newswire? Sign up today and once a month we'll send you an email packed full of essential business news and handy tax tips to help save you money.</p>
                   </div>
-                  <!-- <a class="btn btn-primary" href="#signupModal">Sign up today!</a> -->
+                  <!-- <a class="btn btn-primary" href="#signupModal" data-toggle="modal">Sign up today!</a> -->
                   <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#signupModal">Sign up today</button>
                   <div id="signupModal" class="modal fade" role="dialog">
                      <div class="modal-dialog">
@@ -244,42 +244,38 @@
          </div>
 
          <!-- =our main services -->
-         <div class="row well well-sm service-heading">
+         <div class="row well well-small service-heading">
             <h1>Our services</h1>
          </div>
          <div class="row" id="services">
 
             <div class="col-lg-4">
-               <figure>
-                  <img class="img-thumbnail img-responsive" src="images/taxation.jpg" alt="need help image" />
-                  <figcaption>
-                     <h3>Need help with your taxes</h3>
-                     <p>We can offer peace of mind that you are complying with your tax liablities.</p>
-                  </figcaption>
-               </figure>
-               <a class="btn btn-primary" href="#">Read more</a>
+               <div class="thumbnail-image">
+                  <img class="img-thumbnail img-responsive" src="images/taxation.jpg" alt="tax image" />
+                  <h3>Need help with your taxes</h3>
+                  <p>We can offer peace of mind that you are complying with your tax liablities.</p>
+                  <a class="btn btn-primary" href="#">Read more</a>
+               </div>
+
             </div>
 
             <div class="col-lg-4">
-               <figure>
-                  <img class="img-thumbnail img-responsive" src="images/startup.jpg" alt="need help image" />
-                  <figcaption>
-                     <h3>Starting out in business</h3>
-                     <p>We will help and support you at this crucial time in the life-cycle of your business.</p>
-                  </figcaption>
-               </figure>
-               <a class="btn btn-primary" href="#">Read more</a>
+               <div class="thumbnail-image">
+                  <img class="img-thumbnail img-responsive" src="images/startup.jpg" alt="startup image" />
+                  <h3>Starting out in business</h3>
+                  <p>We will help and support you at this crucial time in the life-cycle of your business.</p>
+                  <a class="btn btn-primary" href="#">Read more</a>
+               </div>
             </div>
 
             <div class="col-lg-4">
-               <figure>
-                  <img class="img-thumbnai img-responsive" src="images/payroll.jpg" alt="need help image" />
-                  <figcaption>
-                     <h3>Payroll becoming a bother</h3>
-                     <p>We can help you to relieve the burdon with our comprehensive payroll service.</p>
-                  </figcaption>
-               </figure>
-               <a class="btn btn-primary" href="#">Read more</a>
+               <div class="thumbnail-image">
+                  <img class="img-thumbnai img-responsive" src="images/payroll.jpg" alt="payroll image" />
+                  <h3>Payroll becoming a bother</h3>
+                  <p>We can help you to relieve the burdon with our comprehensive payroll service.</p>
+                  <a class="btn btn-primary" href="#">Read more</a>
+               </div>
+
             </div>
          </div>
 
@@ -323,7 +319,7 @@
                      <h4>Address -</h4>
                      <p><span class="company-address">Rathi Associates, New Delhi,</span>
                         <span>Near PVR Mall,</span>
-                        <span>Okhla Industrial Area,</span>
+                        <span>Okhla Industrial Area, New Delhi</span>
                         <span>110044</span>
                      </p>
                   </div>
@@ -354,19 +350,19 @@
 
       </footer>
 
-   <!-- All Javascript at the bottom of the page for faster page loading -->
+      <!-- All Javascript at the bottom of the page for faster page loading -->
 
-	<!-- First try for the online version of jQuery-->
-	<script src="http://code.jquery.com/jquery.js"></script>
+   	<!-- First try for the online version of jQuery-->
+   	<script src="http://code.jquery.com/jquery.js"></script>
 
-	<!-- If no online access, fallback to our hardcoded version of jQuery -->
-	<script>window.jQuery || document.write('<script src="includes/js/jquery-1.8.2.min.js"><\/script>')</script>
+   	<!-- If no online access, fallback to our hardcoded version of jQuery -->
+   	<script>window.jQuery || document.write('<script src="includes/js/jquery-1.8.2.min.js"><\/script>')</script>
 
-	<!-- Bootstrap JS -->
-	<script src="bootstrap/js/bootstrap.min.js"></script>
+   	<!-- Bootstrap JS -->
+   	<script src="bootstrap/js/bootstrap.min.js"></script>
 
-	<!-- Custom JS -->
-	<script src="includes/js/script.js"></script>
+   	<!-- Custom JS -->
+   	<script src="includes/js/script.js"></script>
 
    </body>
 
