@@ -19,79 +19,78 @@
    <body>
       <div class="container" id="site_wrap">
 
-         <div class="site-header-wrap">
-            <div class="container header-one">
-               <div class="row">
-                  <div class="col-lg-6 col-sm-6 col-md-6 col-xs-12 pull-left" >
-                     <a href="#" ><img class="img-responsive" src="images/logo.png" alt="logo image" id="logo" /></a>
+         <div class="container nopadding" id="site-header">
+            <div class="row">
+               <div class="col-lg-6 col-sm-6 col-md-6 col-xs-12 pull-left" >
+                  <a href="#" ><img class="img-responsive" src="images/logo.png" alt="logo image" id="logo" /></a>
+               </div>
+               <div class="col-lg-6 col-sm-6 col-md-6 col-xs-12">
+                  <div class="address-header pull-right">
+                     <span class="glyphicon glyphicon-map-marker pull-right"></span>
+                     <address>
+                        <span>Rathi Assoicate, Okhla Industrial Area</span>
+                        <br>
+                        <span>Near Hondo Motors showroom</span>
+                        <span>New Delhi </span>
+                        <span>110044</span>
+                     </address>
+
+                     <p>
+                        <span class="glyphicon glyphicon-phone"></span>
+                        <span class="tel">
+                           <span>Call us on - </span>
+                               011 234-333-33
+
+                        </span>
+                        <br>
+                        <span class="glyphicon glyphicon-envelope"></span>
+                        <span class="email">
+                           <span>Email -</span>
+                           <a href="mailto:ashok.kumar6@wipro.com">ashok.kumar6@wipro.com</a>
+                        </span>
+                     </p>
                   </div>
-                  <div class="col-lg-6 col-sm-6 col-md-6 col-xs-12">
-                     <div class="address-header pull-right">
-                        <span class="glyphicon glyphicon-map-marker pull-right"></span>
-                        <address>
-                           <span>Rathi Assoicate, Okhla Industrial Area</span>
-                           <br>
-                           <span>Near Hondo Motors showroom</span>
-                           <span>New Delhi </span>
-                           <span>110044</span>
-                        </address>
+               </div>
 
-                        <p>
-                           <span class="glyphicon glyphicon-phone"></span>
-                           <span class="tel">
-                              <span>Call us on - </span>
-                                  011 234-333-33
+            </div>
+         </div>
 
-                           </span>
-                           <br>
-                           <span class="glyphicon glyphicon-envelope"></span>
-                           <span class="email">
-                              <span>Email -</span>
-                              <a href="mailto:ashok.kumar6@wipro.com">ashok.kumar6@wipro.com</a>
-                           </span>
-                        </p>
-                     </div>
-                  </div>
+         <nav>
+            <div class="navbar navbar-default">
+               <div class="navbar-header">
+                  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mainMenuNav">
+                     <span class="icon-bar"></span>
+                     <span class="icon-bar"></span>
+                     <span class="icon-bar"></span>
+                     <span class="burger-menu-title">MENU</span>
+                  </button>
+               </div>
+               <div class="navbar-collapse collapse" id="mainMenuNav">
+                  <ul class="nav navbar-nav">
+                     <li class="active"><a href="#">Home</a></li>
+                     <li><a href="portfolio.html">Portfolio</a></li>
+                     <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Services <strong><span class="caret"></span></strong></a>
+                        <ul class="dropdown-menu">
+                           <li><a href="#">Overview</a></li>
+                           <li><a href="#">Services for business</a></li>
+                           <li><a href="#">Services for individual</a></li>
+                        </ul>
+                     </li>
+                     <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">About US <strong><span class="caret"></span></strong></a>
+                        <ul class="dropdown-menu">
+                           <li><a href="#">Overview</a></li>
+                           <li><a href="#">The Firm</a></li>
+                        </ul>
+                     </li>
+                     <li><a href="#">Recruitment</a></li>
+                     <li><a href="#">Contact US</a></li>
 
+                  </ul>
                </div>
             </div>
-            <nav>
-               <div class="navbar navbar-default">
-                  <div class="navbar-header">
-                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mainMenuNav">
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="burger-menu-title">MENU</span>
-                     </button>
-                  </div>
-                  <div class="navbar-collapse collapse" id="mainMenuNav">
-                     <ul class="nav navbar-nav">
-                        <li class="active"><a href="#">Home</a></li>
-                        <li><a href="portfolio.html">Portfolio</a></li>
-                        <li class="dropdown">
-                           <a class="dropdown-toggle" data-toggle="dropdown" href="#">Services <strong><span class="caret"></span></strong></a>
-                           <ul class="dropdown-menu">
-                              <li><a href="#">Overview</a></li>
-                              <li><a href="#">Services for business</a></li>
-                              <li><a href="#">Services for individual</a></li>
-                           </ul>
-                        </li>
-                        <li class="dropdown">
-                           <a class="dropdown-toggle" data-toggle="dropdown" href="#">About US <strong><span class="caret"></span></strong></a>
-                           <ul class="dropdown-menu">
-                              <li><a href="#">Overview</a></li>
-                              <li><a href="#">The Firm</a></li>
-                           </ul>
-                        </li>
-                        <li><a href="#">Recruitment</a></li>
-                        <li><a href="#">Contact US</a></li>
-
-                     </ul>
-                  </div>
-               </div>
-            </nav>
-         </div>
+         </nav>
 
          <!-- =carousel -->
          <div class="carousel slide" id="banner-carousel" data-ride="carousel">
@@ -168,8 +167,23 @@
          <!-- =quick links -->
          <div class="row quicklinks">
             <h3>Quick links</h3>
-            <div class="col-lg-6 list-group content-page-nav-links">
+            <!-- <div class="col-lg-6 list-group content-page-nav-links">
                <a class="list-group-item" href="#">Accountancy</a>
+               <a class="list-group-item" href="#">Account Software</a>
+               <a class="list-group-item" href="#">Bookkeeping</a>
+               <a class="list-group-item" href="#">Business start-up</a>
+               <a class="list-group-item" href="#">Business support</a>
+               <a class="list-group-item" href="#">Business tax</a>
+               <a class="list-group-item" href="#">Company secretarial</a>
+            </div> -->
+
+            <div class="collapse in" id="demo">
+               <p>
+                  This is a demo div
+               </p>
+            </div>
+            <div class="col-lg-6 list-group accordian">
+               <a class="list-group-item" href="#demo" data-toggle="collapse">Accountancy</a>
                <a class="list-group-item" href="#">Account Software</a>
                <a class="list-group-item" href="#">Bookkeeping</a>
                <a class="list-group-item" href="#">Business start-up</a>
